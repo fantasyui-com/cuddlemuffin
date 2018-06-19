@@ -3,15 +3,18 @@ const db = require('./index.js')();
 
 async function main(){
 
-  const expected = {uuid:1, version:1, class:"bueno", email: 'user@example.com'};
+  const expected = {
+    uuid:"03f6fe5c-6631-4d8e-a0b0-fccf6c16db18",
+    email: 'user@example.com'
+  };
 
-  db.set(expected);
+  await db.set(expected);
 
   const actual = await db.get(expected.uuid);
 
-  assert.equal( actual , expected );
+  assert.equal( actual.email , expected.email );
 
-  console.log(db)
+  console.log( JSON.stringify(actual, null, '  ') );
 
 }
 
