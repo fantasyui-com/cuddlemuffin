@@ -15,6 +15,11 @@ async function main(){
   assert.equal( actual.email , expected.email );
 
   console.log( JSON.stringify(actual, null, '  ') );
+  console.log( JSON.stringify(await db.entries(), null, '  ') );
+  console.log( JSON.stringify(await db.keys(), null, '  ') );
+
+  console.log( JSON.stringify(await db.clean(), null, '  ') );
+  console.log( JSON.stringify(await db.clear(), null, '  ') );
 
 }
 

@@ -15,8 +15,8 @@ module.exports = function(location){
     require('./lib/get.js'),
     require('./lib/keys.js'),
     require('./lib/values.js'),
-    require('./lib/all.js'),
     require('./lib/clear.js'),
+    require('./lib/clean.js'),
     require('./lib/delete.js'),
     require('./lib/entries.js'),
     require('./lib/for-each.js')
