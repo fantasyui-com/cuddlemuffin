@@ -19,7 +19,6 @@ module.exports = function(location){
     require('./lib/clean.js'),
     require('./lib/delete.js'),
     require('./lib/entries.js'),
-    require('./lib/for-each.js')
   ){
     constructor(location) {
       super();
