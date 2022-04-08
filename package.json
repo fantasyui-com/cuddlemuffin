@@ -1,6 +1,6 @@
 {
   "name": "cuddlemuffin",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "description": "Lightweight and Elegant Multiuser and Multiprocess Safe Object Store with Conflict Tracking",
   "main": "index.js",
   "scripts": {
